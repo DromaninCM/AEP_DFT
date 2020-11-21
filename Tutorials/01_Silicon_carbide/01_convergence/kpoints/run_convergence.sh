@@ -8,7 +8,7 @@ cat > SiC.scf.in << EOF
  calculation = 'scf',
  restart_mode='from_scratch',
  prefix = 'SiC',
- pseudo_dir = '../../pseudopotentials',
+ pseudo_dir = '../../Pseudo',
  outdir = './tmp',
  tprnfor = .true.,
  tstress = .true.,
