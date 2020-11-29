@@ -1,0 +1,37 @@
+&CONTROL
+ calculation = 'bands',
+ restart_mode='from_scratch',
+ prefix = 'SiC',
+ pseudo_dir = '../../pseudopotentials',
+ outdir = './tmp',
+ tprnfor = .true.,
+ tstress = .true.,
+ verbosity = 'high',
+/
+&SYSTEM
+ ibrav = 2, 
+ celldm(1) = 8.2730700, 
+ nat=2, ntyp=2,
+ ecutwfc = 40.00,
+ ecutrho = 320.00
+ nbnd = 8
+/
+&ELECTRONS
+ conv_thr =   1.0d-9
+ diago_full_acc = .true.
+/
+ATOMIC_SPECIES
+ C  12.011   C.pbe-n-rrkjus_psl.1.0.0.UPF
+Si  28.090  Si.pbe-nl-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS crystal
+ C 0.00000 0.00000 0.00000
+Si 0.25000 0.25000 0.25000
+K_POINTS crystal_b
+ 7
+ 0.00000 0.00000 0.00000 100
+ 0.50000 0.00000 0.50000 30
+ 0.75000 0.25000 0.50000 50
+ 0.50000 0.50000 0.50000 70
+ 0.00000 0.00000 0.00000 100
+ 0.62500 0.25000 0.62500 10
+ 0.50000 0.00000 0.50000 10

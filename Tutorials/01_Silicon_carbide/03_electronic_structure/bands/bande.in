@@ -1,0 +1,5 @@
+&BANDS
+outdir='./tmp'
+prefix='SiC'
+filband='bands_SiC'
+/
