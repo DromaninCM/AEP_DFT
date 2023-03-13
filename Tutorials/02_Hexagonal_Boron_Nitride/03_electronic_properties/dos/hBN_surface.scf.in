@@ -1,0 +1,33 @@
+&CONTROL
+ calculation = 'scf',
+ restart_mode='from_scratch',
+ prefix = 'hBN',
+ pseudo_dir = '../../pseudopotentials',
+ outdir = './tmp',
+ tprnfor = .true.,
+ tstress = .true.,
+ verbosity = 'high',
+/
+&SYSTEM
+ ibrav = 0, 
+ celldm(1) = 4.716
+ nat=2, ntyp=2,
+ ecutwfc = 40.0,
+ ecutrho = 320.0,
+ assume_isolated = '2D'
+/
+&ELECTRONS
+ conv_thr = 1.0d-9
+/
+ATOMIC_SPECIES
+B 10.811    B.pbe-n-rrkjus_psl.1.0.0.UPF
+N 14.00674  N.pbe-n-rrkjus_psl.1.0.0.UPF
+CELL_PARAMETERS (alat=  4.71600000)
+   1.005988001  -0.000000000   0.000000000
+  -0.502994001   0.871211165   0.000000000
+   0.000000000   0.000000000   6.822882000
+ATOMIC_POSITIONS crystal
+B  0.6666667  0.3333333  0.0000000
+N -0.6666667 -0.3333333  0.0000000
+K_POINTS automatic
+ 6 6 1 0 0 0

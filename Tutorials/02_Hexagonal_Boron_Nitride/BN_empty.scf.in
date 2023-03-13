@@ -1,0 +1,27 @@
+&CONTROL
+ calculation = 'scf',
+ restart_mode='from_scratch',
+ prefix = 'hBN',
+ pseudo_dir = '/Users/davide/Dropbox/DFT_course/DFT_tutorials/Boron_nitride/pseudopotentials',
+ outdir = './tmp',
+ tprnfor = .true.,
+ tstress = .true.,
+ verbosity = 'high',
+/
+&SYSTEM
+ ibrav = 4, 
+ celldm(1) = 4.716, celldm(3) = 2.582 
+ nat= 4, ntyp= 2,
+ ecutwfc = ,
+ ecutrho = ,
+/
+&ELECTRONS
+ conv_thr =   1.0d-9
+/
+ATOMIC_SPECIES
+B  10.81 B.pbe-n-rrkjus_psl.1.0.0.UPF
+N  14.01 N.pbe-n-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS crystal
+
+K_POINTS automatic
+

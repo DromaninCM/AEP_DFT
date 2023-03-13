@@ -1,0 +1,5 @@
+&BANDS
+outdir='./tmp'
+prefix='hBN'
+filband='bands_hBN'
+/
